@@ -64,11 +64,10 @@
   }
   .header-inner{
     display:flex;
+    margin: 20px auto;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-between;
-    gap:0.75rem;
-    padding:0.9rem 0;
   }
   .logo{
     font-family:var(--font-display);
@@ -119,6 +118,12 @@
     font-family:var(--font-display);
     font-size:1.25rem;
   }
+
+  @media screen and (max-width: 769px) {
+    .header-inner {
+        justify-content: center;
+    }
+}
 
   /* ---------- Hero ---------- */
   .hero{
@@ -338,7 +343,7 @@
 
 <header>
   <div class="container header-inner">
-    <div class="logo">やすらぎ法律事務所<span>相続・遺言・家族信託のご相談</span></div>
+    <div class="logo">サンプル法律事務所<span>レスポンシブ動作サンプルです。</span></div>
     <div class="a11y-controls" role="group" aria-label="文字の大きさを変更">
       <span>文字の大きさ</span>
       <button type="button" data-size="md" aria-pressed="true">A</button>
@@ -450,8 +455,8 @@
         <span class="eyebrow">アクセス</span>
         <h2>事務所のご案内</h2>
         <dl>
-          <dt>名称</dt><dd>やすらぎ法律事務所</dd>
-          <dt>住所</dt><dd>大阪府大阪市浪速区難波中１丁目（架空の住所）</dd>
+          <dt>名称</dt><dd>サンプル法律事務所</dd>
+          <dt>住所</dt><dd>大阪府大阪市架空の住所</dd>
           <dt>アクセス</dt><dd>南海「難波駅」より徒歩5分</dd>
           <dt>受付時間</dt><dd>平日 9:00〜18:00</dd>
         </dl>
